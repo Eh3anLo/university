@@ -9,6 +9,8 @@ def pw_sort(prices,weights):
     return data_pack
 
 def knapsack():
+    """ Selecting items that give us the most price backpack
+    """
     data_pack = pw_sort(prices,weights) # sorting items base on price/weight desending
     remain_capacity = backpack_weight
     max_price = 0
