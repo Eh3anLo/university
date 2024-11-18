@@ -5,11 +5,11 @@ def pw_sort(prices,weights):
         new_data = (prices[i],weights[i],price_on_weight)
         data_pack.append(new_data)
 
-    data_pack.sort(key=lambda item:item[2], reverse=True)
+    data_pack.sort(key=lambda item:item[2], reverse=True) # sort base on price/weight value
     return data_pack
 
 def knapsack():
-    data_pack = pw_sort(prices,weights)
+    data_pack = pw_sort(prices,weights) # sorting items base on price/weight desending
     remain_capacity = backpack_weight
     max_price = 0
     i = 0
